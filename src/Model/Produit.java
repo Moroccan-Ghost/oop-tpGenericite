@@ -1,14 +1,14 @@
 package Model;
 
 public class Produit {
-    private int id;
+    private long id;
     private String nom;
     private String marque;
     private double prix;
     private String description;
     private int nbrStock;
 
-    public Produit(int id, String nom, String marque, double prix, String description, int nbrStock) {
+    public Produit(long id, String nom, String marque, double prix, String description, int nbrStock) {
         this.setId(id);
         this.setNom(nom);
         this.setMarque(marque);
@@ -17,11 +17,11 @@ public class Produit {
         this.setNbrStock(nbrStock);
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
