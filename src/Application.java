@@ -61,11 +61,11 @@ public class Application {
         System.out.println("Donnez le nom");
         String nom = sc.next();
         System.out.println("Donnez la marque ");
-        String marque = sc.nextLine();
+        String marque = sc.next();
         System.out.println("Donnez le prix");
         double prix = sc.nextDouble();
         System.out.println("Donnez la description");
-        String description = sc.nextLine();
+        String description = sc.next();
         System.out.println("Donnez la quantite en stock");
         int nbrInStock = sc.nextInt();
 

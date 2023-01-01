@@ -30,13 +30,17 @@ public class MetierProduitImpl implements IMetier<Produit> {
 
     @Override
     public void delete(long id) {
-        for (int i = 0; i < productsList.size(); i++) {
+        int prevSize = productsList.size();
+        for (int i = 0; i < prevSize; i++) {
             if (productsList.get(i).getId() == id) {
                 productsList.remove(i);
                 System.out.println("Product Deleted !");
                 break;
             }
         }
-        System.out.println("No Product was Deleted id not found : " + id);
+        if(prevSize == productsList.size()){
+            System.out.println("No Product was Deleted id not found : " + id);
+        }
+
     }
 }
