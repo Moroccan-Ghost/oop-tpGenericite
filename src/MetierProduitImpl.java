@@ -10,6 +10,7 @@ public class MetierProduitImpl implements IMetier<Produit> {
     @Override
     public void add(Produit o) {
         this.productsList.add(o);
+        System.out.println("Product Added !");
     }
 
     @Override
@@ -32,8 +33,10 @@ public class MetierProduitImpl implements IMetier<Produit> {
         for (int i = 0; i < productsList.size(); i++) {
             if (productsList.get(i).getId() == id) {
                 productsList.remove(i);
+                System.out.println("Product Deleted !");
                 break;
             }
         }
+        System.out.println("No Product was Deleted id not found : " + id);
     }
 }
